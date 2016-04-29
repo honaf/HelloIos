@@ -10,19 +10,19 @@
 
 
 
-@protocol carDelegate <NSObject>
+//@protocol carDelegate <NSObject>
 
-@optional
-- (void)changeNumber:(int)num;
-
-@end
+//@optional
+//- (void)changeNumber:(int)num;
+//
+//@end
 
 @interface CarViewController : UIViewController{
     
 }
 @property (assign) int i;
 
-@property (nonatomic, retain) id<carDelegate> delegate;
+//@property (nonatomic, retain) id<carDelegate> delegate;
 
 
 

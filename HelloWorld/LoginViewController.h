@@ -9,12 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "CarViewController.h"
 
-@interface LoginViewController : UIViewController <UITableViewDelegate,carDelegate>
+//#import <AFURLSessionManager.h>
+
+@interface LoginViewController : UIViewController <UITableViewDelegate>{
+//    AFURLSessionManager *mannger;
+    
+}
 
 @property (assign) int num;
 
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
+//@property (nonatomic, retain) AFHTTPRequestSerializer *serializer;
 
 
 @end

@@ -17,13 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"车模详情";
+//    self.navigationController.navigationBarHidden = YES;
     // Do any additional setup after loading the view from its nib.
     
-    UIImageView *imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wel"]];
-    
-    imageview.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width , [UIScreen mainScreen].bounds.size.height);
-    
-    [self.view addSubview:imageview];
+//    UIImageView *imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wel"]];
+//    
+//    imageview.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width , [UIScreen mainScreen].bounds.size.height);
+//    
+//    [self.view addSubview:imageview];
 }
 
 - (void)didReceiveMemoryWarning {
