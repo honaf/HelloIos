@@ -7,26 +7,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarViewController">
             <connections>
+                <outlet property="tableView" destination="9K1-4z-NUA" id="FkM-9s-4ZL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pj-Ll-gmR">
-                    <rect key="frame" x="121" y="234" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yea-T6-zbK">
-                    <rect key="frame" x="131" y="460" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9K1-4z-NUA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="185.5" y="351.5"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9K1-4z-NUA" secondAttribute="bottom" id="5XT-Qt-iox"/>
+                <constraint firstItem="9K1-4z-NUA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mnm-Nq-8Qn"/>
+                <constraint firstItem="9K1-4z-NUA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="idj-x7-L17"/>
+                <constraint firstAttribute="trailing" secondItem="9K1-4z-NUA" secondAttribute="trailing" id="sdF-Zm-EnS"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="185" y="351"/>
         </view>
     </objects>
 </document>

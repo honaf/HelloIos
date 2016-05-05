@@ -17,10 +17,13 @@
 //
 //@end
 
-@interface CarViewController : UIViewController{
+@interface CarViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    
     
 }
 @property (assign) int i;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (copy,nonatomic) NSArray *dwarves;
 
 //@property (nonatomic, retain) id<carDelegate> delegate;
 
